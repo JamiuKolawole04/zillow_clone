@@ -46,6 +46,7 @@ body {
 main {
   font-family: "Open Sans";
   width: 100%;
+  background: var(--white);
 }
 
 .parent__container {
@@ -155,6 +156,7 @@ header {
   margin-top: -16px;
   right: 220px;
   overflow-y: scroll;
+  z-index: 1;
 }
 
 .manage-rentals__content ul {
@@ -191,7 +193,7 @@ svg {
   color: var(--mainBlack);
 }
 
-button,
+button.icon-btn,
 input[type="text"] {
   background: none;
   border: none;
@@ -211,4 +213,46 @@ input[type="text"] {
   max-width: 500px;
   padding: 20px;
   border-radius: 8px;
+}
+
+section.home-recommendation__section {
+  margin: 80px auto 40pc;
+  max-width: 1100px;
+}
+
+section.home-recommendation__section h5 {
+  color: var(--mainBlack);
+  text-transform: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0px;
+}
+
+section.home-recommendation__section p {
+  color: rgb(89, 107, 130);
+  text-transform: none;
+  font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+button.sign-in__btn {
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid var(--mainBlue);
+  padding: 9px 16px;
+  border-radius: 4px;
+  margin-top: 12px;
+  background-color: transparent;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+button.sign-in__btn a {
+  color: var(--mainBlue);
 }
