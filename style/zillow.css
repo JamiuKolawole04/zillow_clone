@@ -256,3 +256,26 @@ button.sign-in__btn {
 button.sign-in__btn a {
   color: var(--mainBlue);
 }
+
+.buy-sell-rent-home__section {
+  width: 100%;
+}
+
+.buy-sell-rent-home__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px 20px;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+}
+
+.buy-sell-rent-home__wrapper img {
+  width: 100%;
+}
+
+.buy-sell-rent-home__wrapper > div {
+  background-color: var(--white);
+  box-shadow: rgb(209, 209, 213) 0px 5px 15px;
+  border-radius: 4px;
+  transition: all 200ms ease 0s;
+  padding: 20px;
+}
