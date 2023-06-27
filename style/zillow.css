@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+*,
+**::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/font/OpenSans-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/font/OpenSans-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/font/OpenSans-SemiBold.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/font/OpenSans-Bold.woff2);
+  font-weight: 700;
+}
+
+:root {
+  --allTransition: all 0.5s ease;
+  --mainBlack: rgb(42, 42, 51);
+  --mainBlue: #1a79ff;
+  --white: #ffffff;
+}
+
+main {
+  font-family: "Open Sans";
+  width: 100%;
+}
+
+.parent__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-top: 1px solid rgb(216, 216, 216);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: var(--allTransition) 3s;
+}
+
+ul {
+  list-style: none;
+}
+
+a.main__link {
+  color: var(--mainBlack);
+  font-size: 16px;
+}
+
+a.main__link:hover {
+  color: var(--mainBlue);
+}
+
+.zillow-header__logo {
+  width: 160px;
+}
+
+.logo__wrapper {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.dropdown__paragraph {
+  color: var(--mainBlack);
+  font-weight: 600;
+  margin-left: 40px;
+}
+.mega-dropdown a {
+  color: var(--mainBlue);
+}
+
+.mega-dropdown ul li {
+  margin-bottom: 20px;
+}
+
+header {
+  padding-top: 20px;
+  background: var(--white);
+}
+
+.mega-dropdown > div:nth-of-type(1) {
+  border-right: 1px solid rgb(216, 216, 216);
+  padding-right: 20px;
+}
