@@ -282,6 +282,10 @@ button.sign-in__btn a {
   border-radius: 8px;
 }
 
+.buy-sell-rent-home__wrapper > div:hover {
+  transform: scale(1.06);
+}
+
 .buy-sell-rent-home__wrapper h4 {
   color: var(--mainBlack);
   font-weight: 700;
