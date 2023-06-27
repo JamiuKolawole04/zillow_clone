@@ -101,6 +101,11 @@ a.main__link:hover {
   font-size: 14px;
 }
 
+.mega-dropdown a:hover {
+  color: var(--mainBlack);
+  text-decoration: underline;
+}
+
 .mega-dropdown ul li {
   margin-bottom: 20px;
 }
@@ -114,11 +119,16 @@ header {
   padding-top: 20px;
 }
 
-.mega-dropdown > div:nth-of-type(1) {
+.mega-dropdown > div:nth-of-type(1),
+.rental-bub__wrapper {
   border-right: 1px solid rgb(216, 216, 216);
   padding-right: 20px;
 }
 
-.mega-dropdown > div:nth-of-type(2) {
+.resources__container {
   padding-left: 32px;
+}
+
+.resources__container > p {
+  margin-bottom: 28px;
 }
