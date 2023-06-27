@@ -278,4 +278,51 @@ button.sign-in__btn a {
   border-radius: 4px;
   transition: all 200ms ease 0s;
   padding: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.buy-sell-rent-home__wrapper h4 {
+  color: var(--mainBlack);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0px;
+}
+
+.buy-sell-rent-home__wrapper p {
+  color: var(--mainBlack);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0px 0px;
+}
+
+.buy-sell-rent-home__wrapper button a {
+  color: var(--mainBlue);
+}
+
+.buy-sell-rent-home__wrapper button {
+  display: inline-flex;
+  text-align: center;
+  border-radius: 4px;
+  user-select: none;
+  padding: 9px 16px;
+  margin: 24px 0px 16px;
+  appearance: none;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  outline: none;
+  padding: 12px 20px;
+  border: 1px solid var(--mainBlue);
+  background-color: var(--white);
+}
+
+.buy-sell-rent-home__wrapper > div:hover button {
+  background-color: rgb(0, 106, 255);
+}
+
+.buy-sell-rent-home__wrapper > div:hover button a {
+  color: rgb(255, 255, 255);
 }
