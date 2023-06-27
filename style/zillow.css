@@ -75,7 +75,6 @@ ul {
 
 a.main__link {
   color: var(--mainBlack);
-  font-size: 16px;
 }
 
 a.main__link:hover {
@@ -96,8 +95,10 @@ a.main__link:hover {
   font-weight: 600;
   margin-left: 40px;
 }
+
 .mega-dropdown a {
   color: var(--mainBlue);
+  font-size: 14px;
 }
 
 .mega-dropdown ul li {
@@ -109,7 +110,15 @@ header {
   background: var(--white);
 }
 
+.mega-dropdown {
+  padding-top: 20px;
+}
+
 .mega-dropdown > div:nth-of-type(1) {
   border-right: 1px solid rgb(216, 216, 216);
   padding-right: 20px;
+}
+
+.mega-dropdown > div:nth-of-type(2) {
+  padding-left: 32px;
 }
