@@ -9,3 +9,11 @@
 .align-items-center {
   align-items: center;
 }
+
+.column {
+  flex-direction: column;
+}
+
+.center-text {
+  text-align: center;
+}
