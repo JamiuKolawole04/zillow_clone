@@ -689,8 +689,10 @@
             </div>
           </nav>
         </header>
+        <!-- header ends -->
       </div>
 
+      <!-- Agent section starts -->
       <section class="agent__section center-text">
         <h1>Agents. Tours. Loans. Homes.</h1>
 
@@ -720,6 +722,9 @@
         </div>
       </section>
 
+      <!-- Agent section ends -->
+
+      <!-- Home recommendation section starts -->
       <section
         class="home-recommendation__section d-flex align-items-center justify-between"
       >
@@ -733,7 +738,9 @@
 
         <img src="/assets/images/zillow-gate.webp" alt="" />
       </section>
+      <!-- Home recommendation section ends -->
 
+      <!-- buy sell rent home section starts -->
       <section class="buy-sell-rent-home__section">
         <div class="d-grid buy-sell-rent-home__wrapper">
           <div
@@ -782,8 +789,156 @@
           </div>
         </div>
       </section>
+      <!-- buy sell rent home section starts -->
 
-      <!-- header ends -->
+      <!-- accordion section starts -->
+      <section class="accordion__section d-grid">
+        <div class="accordion">
+          <div class="d-flex align-items-center">
+            <p>Real Estate</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+
+          <div class="panel">
+            <ul class="center-text">
+              <li>
+                <a href="https://www.zillow.com/browse/homes/"
+                  >Browse all homes</a
+                >
+              </li>
+
+              <li>
+                <a href="https://www.zillow.com/albuquerque-nm/"
+                  >Albuquerque real estate</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="d-flex align-items-center">
+            <p>Rentals</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+
+          <div class="panel">
+            <ul class="center-text">
+              <li>
+                <a href="">ok</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="d-flex align-items-center">
+            <p>Mortgage Rates</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+
+          <div class="panel">
+            <ul class="center-text">
+              <li>
+                <a href="">ok</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="d-flex align-items-center">
+            <p>Browse Homes</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+
+          <div class="panel">
+            <ul class="center-text">
+              <li>
+                <a href="https://www.zillow.com/browse/homes/"
+                  >Browse all homes</a
+                >
+              </li>
+
+              <li>
+                <a href="https://www.zillow.com/albuquerque-nm/"
+                  >Albuquerque real estate</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- accordion section ends -->
     </main>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.children[1];
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

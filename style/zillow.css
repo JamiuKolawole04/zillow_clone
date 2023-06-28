@@ -257,8 +257,10 @@ button.sign-in__btn a {
   color: var(--mainBlue);
 }
 
-.buy-sell-rent-home__section {
+section.buy-sell-rent-home__section {
   width: 100%;
+  background-color: #f9f9fb;
+  padding: 80px 0;
 }
 
 .buy-sell-rent-home__wrapper {
@@ -329,4 +331,44 @@ button.sign-in__btn a {
 
 .buy-sell-rent-home__wrapper > div:hover button a {
   color: rgb(255, 255, 255);
+}
+
+.accordion__section {
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.accordion__section p {
+  color: #2a2a33;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 40px;
+}
+
+.accordion__section svg {
+  color: var(--mainBlue);
+  margin-left: 24px;
+}
+
+.accordion {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion ul li a {
+  color: var(--mainBlue);
+}
+
+.accordion ul {
+  margin-left: -100px;
 }
