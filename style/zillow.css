@@ -333,10 +333,11 @@ section.buy-sell-rent-home__section {
   color: rgb(255, 255, 255);
 }
 
-.accordion__section {
+section.accordion__section {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   max-width: 1100px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .accordion__section p {
@@ -380,4 +381,26 @@ section.buy-sell-rent-home__section {
 .accordion ul li {
   padding-bottom: 12px;
   width: 110%;
+}
+
+section.about__section {
+  border-top: 1px solid rgb(216, 216, 216);
+}
+
+section.about__section nav {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section.about__section nav ul li {
+  margin-right: 20px;
+}
+
+section.about__section nav ul li a {
+  color: var(--mainBlack);
+  font-size: 14px;
+}
+
+section.about__section nav ul li a:hover {
+  text-decoration: underline;
 }
