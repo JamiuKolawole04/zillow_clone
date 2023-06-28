@@ -1,0 +1,94 @@
+.icon__container {
+  display: flex;
+  margin-top: 16px;
+  padding: 12px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.mobile-nav-div {
+  background-color: var(--white);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: 300;
+  overflow: hidden;
+  text-align: left;
+  transition: all 0.5s ease-out, background 1s ease-out;
+}
+
+.nav-closed {
+  height: 68px;
+  background-color: rgba(255, 116, 0, 0.8);
+  transition: all 0.8s ease-out, background 1.2s ease-in;
+}
+
+.mobile__accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.mobile__panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* overflow-y: scroll; */
+}
+
+ul.mobile__list li {
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.mobile__list {
+  margin-left: -38px;
+  padding: 40px;
+}
+
+h6 {
+  font-size: 14px;
+  color: rgb(42, 42, 51);
+  margin: 0px;
+  line-height: 40px;
+}
+
+.mobile__panel a {
+  color: var(--mainBlue);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.mobile__accordion svg {
+  color: var(--mainBlue);
+}

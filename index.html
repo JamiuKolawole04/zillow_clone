@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./style/zillow.css" />
     <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/mobile-nav.css" />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -692,33 +693,141 @@
         <!-- header ends -->
       </div>
 
-      <!-- Agent section starts -->
-      <section class="agent__section center-text">
-        <h1>Agents. Tours. Loans. Homes.</h1>
+      <!-- mobilesection starts -->
+      <div class="mobile__view">
+        <div class="mobile-nav-div nav-closed">
+          <div
+            class="icon__container d-flex align-items-center justify-between"
+            id="icon__wrapper"
+          >
+            <div>
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
 
-        <div class="input__container d-flex align-items-center">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Enter an addres, neighbourhood, city or Zip code"
-          />
-          <button class="icon-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-              />
-            </svg>
-          </button>
+            <img src="./assets/images/z-logo-white.svg" alt="" />
+            <a href="">Sign In</a>
+          </div>
+
+          <nav>
+            <ul class="mobile__list d-flex fd-column">
+              <li class="mobile__accordion">
+                <div class="d-flex align-items-center justify-between">
+                  <a href="https://www.zillow.com/homes/">Buy</a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </li>
+
+              <div class="mobile__panel">
+                <h6>Homes for sale</h6>
+
+                <div class="d-flex fd-column">
+                  <a href="https://www.zillow.com/homes/for_sale/"
+                    >Homes for sale</a
+                  >
+
+                  <a href="https://www.zillow.com/homes/for_sale/fore_lt/"
+                    >Foreclosures</a
+                  >
+
+                  <a href="https://www.zillow.com/homes/fsbo/"
+                    >For sale by owner</a
+                  >
+
+                  <a href="https://www.zillow.com/homes/for_sale/1_open/"
+                    >Open houses</a
+                  >
+
+                  <a href="https://www.zillow.com/homes/new_homes/"
+                    >New construction</a
+                  >
+
+                  <a href="https://www.zillow.com/homes/coming_soon/cmsn_lt/"
+                    >Coming soon</a
+                  >
+
+                  <a href="https://www.zillow.com/homes/recently_sold/"
+                    >Recent home sales</a
+                  >
+
+                  <a href="https://www.zillow.com/browse/homes/">All homes</a>
+
+                  <h6>Resources</h6>
+
+                  <a href="https://www.zillow.com/home-buying-guide/"
+                    >Buyers Guide</a
+                  >
+
+                  <a href="https://www.zillow.com/foreclosures/"
+                    >Foreclosure center</a
+                  >
+
+                  <a href="https://www.zillow.com/z/buying/app-download/"
+                    >Real estate app</a
+                  >
+
+                  <a href="https://www.zillow.com/down-payment-assistance/"
+                    >Down payment assistance</a
+                  >
+                </div>
+              </div>
+
+              <li><a href="#"> MENU</a></li>
+              <li><a href="#"> PAGES</a></li>
+              <li><a href="#"> SHOP</a></li>
+              <li>
+                <a target="_blank" href="+897-82-18015"> +897-82-18015</a>
+              </li>
+              <li><a href="#"> BOOK A TABLE</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- mobile section ends -->
+
+      <!-- Agent section starts -->
+      <section class="agent__section">
+        <div class="center-text">
+          <h1>Agents. Tours. Loans. Homes.</h1>
+
+          <div class="input__container d-flex align-items-center">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Enter an addres, neighbourhood, city or Zip code"
+            />
+            <button class="icon-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -2108,26 +2217,152 @@
               individuals with disabilities. We are continuously working to
               improve the accessibility of our web experience for everyone, and
               we welcome feedback and accommodation requests. If you wish to
-              report an issue or seek an accommodation, please
+              report an issue or seek an accommodation, please <br />
+              <span class="center-text let-us-know__link">
+                <a
+                  href="https://zillow.zendesk.com/hc/en-us/requests/new?ticket_form_id=39140"
+                  >let us know</a
+                >
+              </span>
             </p>
           </div>
+
+          <div class="zillow-inc__wrapper">
+            <p>
+              Zillow, Inc. holds real estate brokerage licenses in multiple
+              states. Zillow (Canada), Inc. holds real estate brokerage licenses
+              in multiple provinces.
+
+              <br />
+              <span class="d-flex center-text justify-center"
+                ><a href="https://s.zillowstatic.com/pfs/static/SOP_NYS.pdf"
+                  >§ 442-H New York Standard Operating Procedures</a
+                >
+              </span>
+
+              <br />
+              <span class="d-flex center-text justify-center">
+                <a
+                  class="mt"
+                  href="https://s.zillowstatic.com/pfs/static/fairhousingnotice.pdf"
+                  >§ New York Fair Housing Notice</a
+                >
+              </span>
+
+              <br />
+              <span class="d-flex center-text justify-center mt">
+                TREC:
+                <a href="https://s.zillowstatic.com/pfs/static/TREC.pdf">
+                  Information about brokerage services, Consumer protection
+                  notice</a
+                >
+              </span>
+
+              <br />
+              <span class="d-flex center-text justify-center mt"
+                >California DRE #1522444</span
+              >
+
+              <br />
+              <span class="contact-zillow d-flex center-text justify-center"
+                ><a href="https://www.zillow.com/z/info/contact-us/" class="mt"
+                  >Contact Zillow, Inc. Brokerage</a
+                ></span
+              >
+            </p>
+          </div>
+
+          <div class="trademark__wrapper">
+            <p>
+              For listings in Canada, the trademarks REALTOR®, REALTORS®, and
+              the REALTOR® logo are controlled by The Canadian Real Estate
+              Association (CREA) and identify real estate professionals who are
+              members of CREA. The trademarks MLS®, Multiple Listing Service®
+              and the associated logos are owned by CREA and <br />
+              <span class="d-flex center-text justify-center">
+                identify the quality of services provided by real estate
+                professionals who are members of CREA. Used under license.
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <ul class="d-flex justify-center btn-group">
+              <li>
+                <a
+                  href="http://zillow.com/z/buying/app-download?itc=zw_zw_zw_zillow-footer_btn_ios-download"
+                  ><img src="./assets/images/app-store-badge.svg" alt=""
+                /></a>
+              </li>
+
+              <li>
+                <a
+                  href="http://zillow.com/z/buying/app-download?itc=zw_zw_zw_zillow-footer_btn_android-download"
+                >
+                  <img src="./assets/images/google-play-badge.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="social-media__links d-flex justify-center align-items-center"
+          >
+            <a href="/">
+              <img src="./assets/images/zillow-logo.svg" alt="" />
+            </a>
+
+            <p class="follow">follow us:</p>
+            <a href="https://www.facebook.com/Zillow">
+              <img
+                class="media-img"
+                src="./assets/images/facebook.svg"
+                alt=""
+              />
+            </a>
+
+            <a href="https://www.instagram.com/zillow">
+              <img
+                src="./assets/images/instagram.svg"
+                class="media-img"
+                alt=""
+              />
+            </a>
+
+            <a href="https://www.tiktok.com/@zillow">
+              <img src="./assets/images/tiktok.svg" class="media-img" alt="" />
+            </a>
+
+            <a href="">
+              <img src="./assets/images/twitter.svg" class="media-img" alt="" />
+            </a>
+
+            <p class="copyright">© 2006-2023 Zillow</p>
+          </div>
+        </div>
+
+        <div class="footer-img">
+          <img src="./assets/images/zillow-footer-img.svg" alt="" />
         </div>
       </footer>
       <!-- footer ends -->
     </main>
 
+    <script src="./js/accordion.js"></script>
+    <script src="./js/mobileNav.js"></script>
     <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
+      const acct = document.getElementsByClassName("mobile__accordion");
+      let x;
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
+      for (x = 0; x < acct.length; x++) {
+        acct[x].addEventListener("click", function () {
           this.classList.toggle("active");
-          var panel = this.children[1];
+          const panel = this.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
+            // panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.maxHeight = "100%";
           }
         });
       }
