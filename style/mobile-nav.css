@@ -47,7 +47,7 @@
   transition: all 0.8s ease-out, background 1.2s ease-in;
 }
 
-.mobile__accordion {
+.mobile__accordion a {
   color: #444;
   cursor: pointer;
   padding: 18px;
