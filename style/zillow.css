@@ -179,6 +179,20 @@ header {
   border-bottom: 1px solid rgb(216, 216, 216);
 }
 
+.mobile__view {
+  display: none;
+}
+
+@media screen and (max-width: 1169.98px) {
+  header {
+    display: none;
+  }
+
+  .mobile__view {
+    display: block;
+  }
+}
+
 section.agent__section {
   background-image: url(../assets/images/zillow_girl.webp);
   background-repeat: no-repeat;
@@ -471,4 +485,53 @@ footer > div > div {
 
 .footer-img {
   margin-top: 80px;
+}
+
+.footer-img img {
+  width: 100%;
+}
+
+.social-media__links {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1400px) {
+  header {
+    padding-right: 40px;
+  }
+
+  .logo__wrapper {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .buy-sell-rent-home__wrapper,
+  section.home-recommendation__section,
+  footer > div:nth-of-type(1) {
+    padding: 20px;
+  }
+
+  section.agent__section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  section.home-recommendation__section {
+    flex-direction: column;
+  }
+
+  section.home-recommendation__section img {
+    width: 100%;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .buy-sell-rent-home__wrapper > div {
+    padding: 8px;
+    max-width: 260px;
+  }
 }
